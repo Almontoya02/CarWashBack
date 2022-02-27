@@ -40,7 +40,7 @@ router.post('/record/create',verifyToken, async (req,res)=>{
     }     
 })
 
-router.get('',async(req,res)=>{
+router.get('/hola',async(req,res)=>{
     res.status(200).send(
         {
             status:true,
