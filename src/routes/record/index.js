@@ -116,7 +116,33 @@ router.post('/record/sendrecord',verifyToken,async(req,res)=>{
         )
     }  
 })
-
+/** 
+router.get('/query',async(req,res)=>{
+    try{
+        const record= await getQuerys(1646006400,1646053200)
+        res.status(200).send(
+            {
+                status:true,
+                message:"records get by user Done",
+                data:{
+                    record
+                }
+            }
+        )
+    }
+    catch(error){
+        res.status(500).send(
+            {
+                status:false,
+                message:"failed to get records",
+                data:{
+                    message:error.toString()
+                }
+            }
+        )
+    }   
+})
+*/
 router.get('/record/getbyuser/:user',verifyToken, async(req,res)=>{
     try{
         const params = req.params

@@ -47,6 +47,20 @@ async function getRecordById(cedula){
     return record
     
 }
+/** 
+async function getQuerys(cedula){
+    const record= await Record.find({"workerId":{$eq:cedula}}).count().catch((error)=>{
+        console.log("Error",error)
+        throw new Error('records not found')
+    })
+    if(record==null || record.length <=0 ){
+        return []
+        
+    }
+    return record
+}
+*/
+
 
 
 module.exports={createRecord,getRecordById}
