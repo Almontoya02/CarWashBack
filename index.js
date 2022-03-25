@@ -12,6 +12,8 @@ app.use(express.json())
 app.use(cors())
 app.use(userRouter)
 app.use(recordRouter)
-app.listen(port,()=>{
+server = app.listen(port,()=>{
     console.log("Server running on: " + port)
-})
+});
+
+module.exports=server
