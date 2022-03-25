@@ -12,6 +12,7 @@
   "author": "Alejandro Montoya",
   "license": "ISC",
   "dependencies": {
+    "@airbrake/node": "^2.1.7",
     "axios": "^0.26.0",
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
