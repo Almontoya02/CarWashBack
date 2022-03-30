@@ -1,3 +1,3 @@
 # CarWashBack
 
-Proyecto bootcamp de lavado de carros con nodejs nodemailer, mongodb. etc
+Proyecto de lavado de carros con nodejs nodemailer, mongodb, mocha y heroku
