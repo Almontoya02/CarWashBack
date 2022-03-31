@@ -52,7 +52,7 @@ describe("get request",function(){
         it("Status deberia retornar true",function(){
             app.get("/record/getbyuser/10255555222").send().set({
                 "access-token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsbW9uMkBnZy5jb20iLCJuYW1lIjoiYWxiZXJudWFsIGdvbWV6IiwiaWF0IjoxNjQ4MjE0ODA3fQ.CpjDdJz3ivARsM3hwnPW_P2XPPS7rpR-v6MIlEZwX5A",
-                email:"almon2@gg.com"
+                email:"almon2@ggssss.com"
             }).end((err,res)=>{
                 expect(res.body.status).to.equal(true)
             })
