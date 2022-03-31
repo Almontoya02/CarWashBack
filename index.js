@@ -4,7 +4,7 @@ const app = express()
 const port = process.env.PORT || 4001
 require("dotenv").config()
 const mongoose = require("mongoose")
-mongoose.connect(process.env.MONGODB_URL)
+mongoose.connect(String(process.env.MONGODB_URL))
 const userRouter = require("./src/routes/user")
 const recordRouter = require("./src/routes/record")
 const Airbrake = require('@airbrake/node');
