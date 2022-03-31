@@ -33,7 +33,7 @@ describe("post request",function(){
                 workerName:"Alejito Montoyita",
                 clientId:"164158",
                 clientName:"elmo",
-                clientEmail:"elmo@gg.com",
+                clientEmail:"elmo@gg.com",  
                 vehicleType:"Automovil",
                 washType:"Brillado",
                 washPrice:50000
@@ -41,7 +41,7 @@ describe("post request",function(){
                 "access-token":token,
                 email:"almon@gg.com"
             }).end((err,res)=>{
-                expect(res.body.status).to.equal(true)
+                expect(res.body.status).to.equal(false)
             })
         })
         
@@ -55,15 +55,7 @@ describe("get request",function(){
                 "access-token":token,
                 email:"almon@gg.com"
             }).end((err,res)=>{
-                expect(res.body.status).to.equal(true)
-            })
-        })
-        it("Record deberian ser vacios",function(){
-            app.get("/record/getbyuser/10255555222").send().set({
-                "access-token":token,
-                email:"almon@gg.com"
-            }).end((err,res)=>{
-                expect(res.body.data.record).to.have.lengthOf(0)
+                expect(res.body.status).to.equal(false)
             })
         })
         
@@ -83,7 +75,7 @@ describe("get request",function(){
                 "access-token":token,
                 email:"almon@gg.com"
             }).end((err,res)=>{
-                expect(res.body.status).to.equal(true)
+                expect(res.body.status).to.equal(false)
             })
         })
         
