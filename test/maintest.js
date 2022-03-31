@@ -41,7 +41,7 @@ describe("post request",function(){
                 "access-token":token,
                 email:"almon@gg.com"
             }).end((err,res)=>{
-                expect(res.body.status).to.equal(false)
+                expect(res.body.status).to.equal(true)
             })
         })
         
