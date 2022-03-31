@@ -1,14 +1,13 @@
 const express = require('express')
 const cors = require("cors")
 const app = express()
-const port = process.env.PORT || 4001
+const port = process.env.PORT || 4001 || 'test'
 require("dotenv").config()
 const mongoose = require("mongoose")
 mongoose.connect(process.env.MONGODB_URL,{
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useCreateIndex: true,
-  useMongoClient:true 
+  useCreateIndex: true
 })
 const userRouter = require("./src/routes/user")
 const recordRouter = require("./src/routes/record")
