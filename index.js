@@ -7,7 +7,8 @@ const mongoose = require("mongoose")
 mongoose.connect(process.env.MONGODB_URL,{
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useCreateIndex: true
+  useCreateIndex: true,
+  useMongoClient:true 
 })
 const userRouter = require("./src/routes/user")
 const recordRouter = require("./src/routes/record")
