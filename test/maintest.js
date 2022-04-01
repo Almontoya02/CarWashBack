@@ -1,19 +1,18 @@
-const expect = require("chai");
-const request = require("supertest");
-const server =  require("../index");
-var app = request.agent(server);
 var assert = require('assert');
-
-const token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsbW9uQGdnLmNvbSIsIm5hbWUiOiJBbGVqaXRvIE1vbnRveWl0YSIsImlhdCI6MTY0ODc1NzIzN30.d82FVTRvEgCcigTLmdrLJ0pim9rzmYmvsH5zu3Pc4fQ"
-
-describe("Suma",()=>{
-    it("Deberia retornar 12",()=>{
-        let num1 =3;
-        let num2 = 4;
-
-        assert.equal(num1*num2,12);
-        
+describe('Array', function () {
+  describe('#indexOf()', function () {
+    it('should return -1 when the value is not present', function () {
+      assert.equal([1, 2, 3].indexOf(4), -1);
     });
+  });
+});
+var assert = require('assert');
+describe('Array', function () {
+  describe('#indexOf()', function () {
+    it('should return -1 when the value is not present', function () {
+      assert.equal([1, 2, 3].indexOf(4), -1);
+    });
+  });
 });
 
 /**describe("get request",function(){
