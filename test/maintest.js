@@ -1,19 +1,16 @@
 var assert = require('assert');
-describe('Array', function () {
-  describe('#indexOf()', function () {
-    it('should return -1 when the value is not present', function () {
-      assert.equal([1, 2, 3].indexOf(4), -1);
+
+  describe('Suma', function () {
+    it('Suma debe resultar 9', function () {
+      assert.equal(5+4, 9);
     });
   });
-});
-var assert = require('assert');
-describe('Array', function () {
-  describe('#indexOf()', function () {
-    it('should return -1 when the value is not present', function () {
-      assert.equal([1, 2, 3].indexOf(4), -1);
+
+  describe('Resta', function () {
+    it('Resta debe dar 1', function () {
+      assert.equal(3-2, 1);
     });
   });
-});
 
 /**describe("get request",function(){
     describe("Traer registros sin un usuario existente",function(){
