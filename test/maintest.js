@@ -8,7 +8,7 @@ var assert = require('assert');
 
   describe('Resta', function () {
     it('Resta debe dar 1', function () {
-      assert.equal(3-2, 1);
+      assert.equal(3-3, 1);
     });
   });
 
