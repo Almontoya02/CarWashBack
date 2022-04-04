@@ -1,13 +1,13 @@
 const express = require('express')
 const cors = require("cors")
 const app = express()
-const port = process.env.PORT || 4001
+const port = ""
 require("dotenv").config()
 const mongoose = require("mongoose")
 mongoose.connect(process.env.MONGODB_URL)
 const userRouter = require("./src/routes/user")
 const recordRouter = require("./src/routes/record")
-const Airbrake = require('@airbrake/node');
+const Airbrake = require('@airbrake/node');   
 
 new Airbrake.Notifier({
     projectId: 406523,
