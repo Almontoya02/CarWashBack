@@ -2,13 +2,13 @@ var assert = require('assert');
 
   describe('Suma', function () {
     it('Suma debe resultar 9', function () {
-      assert.equal(5+4, 9);
+      assert.equal(5+9, 9);
     });
   });
 
   describe('Resta', function () {
     it('Resta debe dar 1', function () {
-      assert.equal(3-2, 1);
+      assert.equal(3-4, 1);
     });
   });
 
